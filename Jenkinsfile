@@ -24,20 +24,20 @@ node {
       echo "The URL is: ${env.JENKINS_URL}"
       stage ('Clean'){
       echo 'Clean Stage'
-      sh 'cd build && clean.sh'
+      bat 'cd build && clean.cmd'
   }
     stage ('Setup'){
     echo 'Setup Stage'
-    sh 'cd build && setup.sh'
+    bat 'cd build && setup.cmd'
   }
     stage ('Build'){
     echo 'Build Stage'
-    sh 'cd build && build_x64.sh'
-    sh 'cd build && build_x86.sh'
+    bat 'cd build && build_x64.cmd'
+    bat 'cd build && build_x86.cmd'
    }
     stage ('Test'){
     echo 'Test Stage'
-    sh 'cd build && test.sh'
+    bat 'cd build && test.cmd'
   }
 }
 
