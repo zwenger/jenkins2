@@ -1,0 +1,1991 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="X:\__dev\__source\authentication-service\ModelUT\bin\ModelUT.dll" total="356" errors="33" failures="173" not-run="1" inconclusive="0" ignored="1" skipped="0" invalid="0" date="2017-07-05" time="10:55:32">
+  <environment nunit-version="2.6.2.12296" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="X:\__dev\__source\authentication-service\build" machine-name="USRD-DEV33" user="emoyano" user-domain="CONVEYDEV" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Test Project" name="" executed="True" result="Failure" success="False" time="3.017" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="X:\__dev\__source\authentication-service\ModelUT\bin\ModelUT.dll" executed="True" result="Failure" success="False" time="2.149" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="ModelUT" executed="True" result="Failure" success="False" time="2.142" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="DecisionSupport" executed="True" result="Failure" success="False" time="0.983" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Authentication" executed="True" result="Failure" success="False" time="0.983" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="AccountDisabledSpecificationTest" executed="True" result="Failure" success="False" time="0.385" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Failure" success="False" time="0.372" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.AccountDisabledSpecificationTest.IsNotSatisfiedBy(&quot;FindU1&quot;)" executed="True" result="Error" success="False" time="0.029" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.AccountDisabledSpecificationTest.IsNotSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\AccountDisabledSpecificationTest.cs:line 24
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.AccountDisabledSpecificationTest.IsNotSatisfiedBy(&quot;FindU2&quot;)" executed="True" result="Error" success="False" time="0.004" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.AccountDisabledSpecificationTest.IsNotSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\AccountDisabledSpecificationTest.cs:line 24
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Failure" success="False" time="0.007" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.AccountDisabledSpecificationTest.IsSatisfiedBy(null)" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.AccountDisabledSpecificationTest.IsSatisfiedBy(&quot;FindU1ad&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.AccountDisabledSpecificationTest.IsSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\AccountDisabledSpecificationTest.cs:line 17
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="AccountTimedoutSpecificationTest" executed="True" result="Failure" success="False" time="0.024" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Failure" success="False" time="0.008" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.AccountTimedoutSpecificationTest.IsNotSatisfiedBy(&quot;FindU1&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.AccountTimedoutSpecificationTest.IsNotSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\AccountTimedoutSpecificationTest.cs:line 24
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.AccountTimedoutSpecificationTest.IsNotSatisfiedBy(&quot;FindU2&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.AccountTimedoutSpecificationTest.IsNotSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\AccountTimedoutSpecificationTest.cs:line 24
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Failure" success="False" time="0.013" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.AccountTimedoutSpecificationTest.IsSatisfiedBy(null)" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.AccountTimedoutSpecificationTest.IsSatisfiedBy(&quot;FindU1at&quot;)" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.AccountTimedoutSpecificationTest.IsSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\AccountTimedoutSpecificationTest.cs:line 17
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.AccountTimedoutSpecificationTest.IsSatisfiedBy(&quot;FindU2at&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.AccountTimedoutSpecificationTest.IsSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\AccountTimedoutSpecificationTest.cs:line 17
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="EmailSpecificationTest" executed="True" result="Success" success="True" time="0.131" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Success" success="True" time="0.025" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsNotSatisfiedBy(null)" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsNotSatisfiedBy(&quot; &quot;)" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsNotSatisfiedBy(&quot;Abc.example.com&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsNotSatisfiedBy(&quot;A@b@c@example.com&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsNotSatisfiedBy(&quot;ma@@jjf.com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsNotSatisfiedBy(&quot;@majjf.com&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsNotSatisfiedBy(&quot;ma.nu@&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsNotSatisfiedBy(&quot;a\&quot;b(c)d,e:f;g&lt;h&gt;i[j\\k]l@example.com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsNotSatisfiedBy(&quot;just\&quot;not\&quot;right@example.com&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Success" success="True" time="0.098" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma@hostname.com&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma@hostname.comcom&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;MA@hostname.coMCom&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;m.a@hostname.co&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;m_a1a@hostname.com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma-a@hostname.com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma-a@hostname.com.edu&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma-a.aa@hostname.com.edu&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma.h.saraf.onemore@hostname.com.edu&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma12@hostname.com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;12@hostname.com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;j@proseware.com9&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;j_9@[129.126.118.1]&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;m.u@12.23&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;jsmith@[IPv6:2001:db8::1]&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;js@contoso.\x00E4\x00B8\x00AD\x00E5\x203A\x00BD&quot;)" executed="True" result="Success" success="True" time="0.044" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;js#internal@proseware.com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma.@jjf.com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;Abc..123@example.com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma@jjf..com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma@jjf.c&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma...ma@jjf.co&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma_@jjf.com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;js*@proseware.com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma_@jjf&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma_@jjf.&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;ma@jjf.&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;\x00FC\x00F1\x00EE\x00E7\x00F8\x00F0\x00E9@\x00FC\x00F1\x00EE\x00E7\x00F8\x00F0\x00E9.com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;name@hotmail&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;test@-online.com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;\&quot; \&quot;@example.org&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;\&quot;much.more unusual\&quot;@example.com&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.EmailSpecificationTest.IsSatisfiedBy(&quot;\&quot;very.unusual.@.unusual.com\&quot;@example.com&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="IPWhiteListSpecificationTest" executed="True" result="Failure" success="False" time="0.063" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Failure" success="False" time="0.013" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsNotSatisfiedBy(null)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsNotSatisfiedBy(&quot;FindIP4&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsNotSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\IPWhiteListSpecificationTest.cs:line 32
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsNotSatisfiedBy(&quot;FindIP5&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsNotSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\IPWhiteListSpecificationTest.cs:line 32
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsNotSatisfiedBy(&quot;FindIP7&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsNotSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\IPWhiteListSpecificationTest.cs:line 32
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Failure" success="False" time="0.015" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy(&quot;FindIP1&quot;)" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\IPWhiteListSpecificationTest.cs:line 17
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy(&quot;FindIP2&quot;)" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\IPWhiteListSpecificationTest.cs:line 17
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy(&quot;FindIP3&quot;)" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\IPWhiteListSpecificationTest.cs:line 17
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy(&quot;FindIP6&quot;)" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\IPWhiteListSpecificationTest.cs:line 17
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy_NoWhiteList" executed="True" result="Failure" success="False" time="0.029" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(&quot;FindIP1&quot;)" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\IPWhiteListSpecificationTest.cs:line 25
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(&quot;FindIP2&quot;)" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\IPWhiteListSpecificationTest.cs:line 25
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(&quot;FindIP3&quot;)" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\IPWhiteListSpecificationTest.cs:line 25
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(null)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(&quot;FindIP4&quot;)" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\IPWhiteListSpecificationTest.cs:line 25
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(&quot;FindIP5&quot;)" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\IPWhiteListSpecificationTest.cs:line 25
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(&quot;FindIP6&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\IPWhiteListSpecificationTest.cs:line 25
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(&quot;FindIP7&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.IPWhiteListSpecificationTest.IsSatisfiedBy_NoWhiteList(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\IPWhiteListSpecificationTest.cs:line 25
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="LDAPValidSpecificationTest" executed="True" result="Error" success="False" time="0.020" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                          <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.strEncrypt(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Encrypt(String text)
+at ModelUT.DecisionSupport.Authentication.LDAPValidSpecificationTest..ctor() in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\LDAPValidSpecificationTest.cs:line 19
+]]></stack-trace>
+                        </failure>
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.LDAPValidSpecificationTest.IsNotSatisfiedBy(null)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                                <failure>
+                                  <message><![CDATA[TestFixtureSetUp failed in LDAPValidSpecificationTest]]></message>
+                                  <stack-trace />
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.LDAPValidSpecificationTest.IsNotSatisfiedBy(&quot;LOCKEDOUTUSER@DOMAIN.COM&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                                <failure>
+                                  <message><![CDATA[TestFixtureSetUp failed in LDAPValidSpecificationTest]]></message>
+                                  <stack-trace />
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.LDAPValidSpecificationTest.IsNotSatisfiedBy(&quot;NOTALITEUSER@INTEGRATION.NET&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                                <failure>
+                                  <message><![CDATA[TestFixtureSetUp failed in LDAPValidSpecificationTest]]></message>
+                                  <stack-trace />
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.LDAPValidSpecificationTest.IsNotSatisfiedBy(&quot;BADUSER@DOMAIN.COM&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                                <failure>
+                                  <message><![CDATA[TestFixtureSetUp failed in LDAPValidSpecificationTest]]></message>
+                                  <stack-trace />
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.LDAPValidSpecificationTest.IsNotSatisfiedBy(&quot;CANTFINDTHIS@ITSNOTTHERE.COM&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                                <failure>
+                                  <message><![CDATA[TestFixtureSetUp failed in LDAPValidSpecificationTest]]></message>
+                                  <stack-trace />
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.LDAPValidSpecificationTest.IsNotSatisfiedBy(&quot;BADPASSWORD@DOMAIN.COM&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                                <failure>
+                                  <message><![CDATA[TestFixtureSetUp failed in LDAPValidSpecificationTest]]></message>
+                                  <stack-trace />
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.LDAPValidSpecificationTest.IsNotSatisfiedBy(&quot;GOODUSER@QAINTEGRATION&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                                <failure>
+                                  <message><![CDATA[TestFixtureSetUp failed in LDAPValidSpecificationTest]]></message>
+                                  <stack-trace />
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.LDAPValidSpecificationTest.IsSatisfiedBy(&quot;ADGOODUSER@DOMAIN.COM&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                                <failure>
+                                  <message><![CDATA[TestFixtureSetUp failed in LDAPValidSpecificationTest]]></message>
+                                  <stack-trace />
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="MinLengthSpecificationTest" executed="True" result="Success" success="True" time="0.011" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Success" success="True" time="0.006" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLengthSpecificationTest.IsNotSatisfiedBy(&quot;&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLengthSpecificationTest.IsNotSatisfiedBy(null)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLengthSpecificationTest.IsNotSatisfiedBy(&quot;a1&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLengthSpecificationTest.IsNotSatisfiedBy(&quot;ab&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLengthSpecificationTest.IsNotSatisfiedBy(&quot;abc123&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLengthSpecificationTest.IsNotSatisfiedBy(&quot;456test&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLengthSpecificationTest.IsSatisfiedBy(&quot;abc123test&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLengthSpecificationTest.IsSatisfiedBy(&quot;test456test&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="MinLowerAlphaSpecificationTest" executed="True" result="Success" success="True" time="0.067" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Success" success="True" time="0.060" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLowerAlphaSpecificationTest.IsNotSatisfiedBy(&quot;&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLowerAlphaSpecificationTest.IsNotSatisfiedBy(null)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLowerAlphaSpecificationTest.IsNotSatisfiedBy(&quot;a1&quot;)" executed="True" result="Success" success="True" time="0.051" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLowerAlphaSpecificationTest.IsNotSatisfiedBy(&quot;ab&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLowerAlphaSpecificationTest.IsNotSatisfiedBy(&quot;ABCde&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLowerAlphaSpecificationTest.IsNotSatisfiedBy(&quot;ABCDEFG&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Success" success="True" time="0.004" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLowerAlphaSpecificationTest.IsSatisfiedBy(&quot;abc123&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLowerAlphaSpecificationTest.IsSatisfiedBy(&quot;456teSt&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLowerAlphaSpecificationTest.IsSatisfiedBy(&quot;Test456&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinLowerAlphaSpecificationTest.IsSatisfiedBy(&quot;a1B2C3d4efg&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="MinNumericSpecificationTest" executed="True" result="Success" success="True" time="0.012" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Success" success="True" time="0.004" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinNumericSpecificationTest.IsNotSatisfiedBy(&quot;&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinNumericSpecificationTest.IsNotSatisfiedBy(null)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinNumericSpecificationTest.IsNotSatisfiedBy(&quot;a1&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinNumericSpecificationTest.IsNotSatisfiedBy(&quot;12test&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Success" success="True" time="0.005" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinNumericSpecificationTest.IsSatisfiedBy(&quot;abc1d2e3test&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinNumericSpecificationTest.IsSatisfiedBy(&quot;456test&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinNumericSpecificationTest.IsSatisfiedBy(&quot;test456&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinNumericSpecificationTest.IsSatisfiedBy(&quot;a1b2c3d4e&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="MinPasswordAgeSpecificationTest" executed="True" result="Success" success="True" time="0.010" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Success" success="True" time="0.004" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinPasswordAgeSpecificationTest.IsNotSatisfiedBy(0)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinPasswordAgeSpecificationTest.IsNotSatisfiedBy(5)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinPasswordAgeSpecificationTest.IsNotSatisfiedBy(9)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Success" success="True" time="0.003" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinPasswordAgeSpecificationTest.IsSatisfiedBy(10)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinPasswordAgeSpecificationTest.IsSatisfiedBy(15)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinPasswordAgeSpecificationTest.IsSatisfiedBy(50)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-case name="ModelUT.DecisionSupport.Authentication.MinPasswordAgeSpecificationTest.IsSatisfiedByDateTimeMinValue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="MinSpecialCharactersSpecificationTest" executed="True" result="Success" success="True" time="0.019" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Success" success="True" time="0.009" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinSpecialCharactersSpecificationTest.IsNotSatisfiedBy(&quot;&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinSpecialCharactersSpecificationTest.IsNotSatisfiedBy(null)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinSpecialCharactersSpecificationTest.IsNotSatisfiedBy(&quot;a1&quot;)" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinSpecialCharactersSpecificationTest.IsNotSatisfiedBy(&quot;ab&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinSpecialCharactersSpecificationTest.IsNotSatisfiedBy(&quot;ABCde&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinSpecialCharactersSpecificationTest.IsNotSatisfiedBy(&quot;ABCDEFG&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinSpecialCharactersSpecificationTest.IsNotSatisfiedBy(&quot;\\a//&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Success" success="True" time="0.006" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinSpecialCharactersSpecificationTest.IsSatisfiedBy(&quot;`~!@#$^*()[-]_+={}|:;,.?&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinSpecialCharactersSpecificationTest.IsSatisfiedBy(&quot;45@6te.St&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinSpecialCharactersSpecificationTest.IsSatisfiedBy(&quot;Te!st4(56)&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinSpecialCharactersSpecificationTest.IsSatisfiedBy(&quot;{{a1B2C3d4efg}}&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinSpecialCharactersSpecificationTest.IsSatisfiedBy(&quot;[-]&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="MinUpperAlphaSpecificationTest" executed="True" result="Success" success="True" time="0.014" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Success" success="True" time="0.007" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinUpperAlphaSpecificationTest.IsNotSatisfiedBy(&quot;&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinUpperAlphaSpecificationTest.IsNotSatisfiedBy(null)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinUpperAlphaSpecificationTest.IsNotSatisfiedBy(&quot;a1&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinUpperAlphaSpecificationTest.IsNotSatisfiedBy(&quot;ab&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinUpperAlphaSpecificationTest.IsNotSatisfiedBy(&quot;ABcd&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinUpperAlphaSpecificationTest.IsNotSatisfiedBy(&quot;Abcdefg&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Success" success="True" time="0.004" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinUpperAlphaSpecificationTest.IsSatisfiedBy(&quot;ABC123&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinUpperAlphaSpecificationTest.IsSatisfiedBy(&quot;A456teST&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinUpperAlphaSpecificationTest.IsSatisfiedBy(&quot;test456ABC&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.MinUpperAlphaSpecificationTest.IsSatisfiedBy(&quot;A1b2c3d4eFGH&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="NullOrEmptyPasswordSpecificationTest" executed="True" result="Failure" success="False" time="0.016" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Failure" success="False" time="0.008" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.NullOrEmptyPasswordSpecificationTest.IsNotSatisfiedBy(&quot;FindU1&quot;)" executed="True" result="Error" success="False" time="0.004" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.NullOrEmptyPasswordSpecificationTest.IsNotSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\NullOrEmptyPasswordSpecificationTest.cs:line 24
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.NullOrEmptyPasswordSpecificationTest.IsNotSatisfiedBy(&quot;FindU2&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.NullOrEmptyPasswordSpecificationTest.IsNotSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\NullOrEmptyPasswordSpecificationTest.cs:line 24
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Failure" success="False" time="0.004" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.NullOrEmptyPasswordSpecificationTest.IsSatisfiedBy(null)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.NullOrEmptyPasswordSpecificationTest.IsSatisfiedBy(&quot;FindU1np&quot;)" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.NullOrEmptyPasswordSpecificationTest.IsSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\NullOrEmptyPasswordSpecificationTest.cs:line 17
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="PasswordComplexityExtraSpecificationTest" executed="True" result="Success" success="True" time="0.052" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy_ContainsUserInfo" executed="True" result="Success" success="True" time="0.008" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_ContainsUserInfo(&quot;&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_ContainsUserInfo(null)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_ContainsUserInfo(&quot;myUNameItPassword&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_ContainsUserInfo(&quot;1uname2&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_ContainsUserInfo(&quot;myEmail!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_ContainsUserInfo(&quot;eMail123&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_ContainsUserInfo(&quot;emailTOuname&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy_RepeatedCharacters" executed="True" result="Success" success="True" time="0.020" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_RepeatedCharacters(&quot;Abbbname123!&quot;)" executed="True" result="Success" success="True" time="0.012" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_RepeatedCharacters(&quot;bAaA7e9!n&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_RepeatedCharacters(&quot;!2333Qwertmail4&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_RepeatedCharacters(&quot;Ab123!!!&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_RepeatedCharacters(&quot;AbBbBb23!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_RepeatedCharacters(&quot;Abbb123&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_RepeatedCharacters(&quot;bbB12223!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsNotSatisfiedBy_RepeatedCharacters(&quot;abbBBbba&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Success" success="True" time="0.012" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsSatisfiedBy(&quot;Abname123!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsSatisfiedBy(&quot;bA7e9!n&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsSatisfiedBy(&quot;!23Qwertmail4&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsSatisfiedBy(&quot;Ab123!&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsSatisfiedBy(&quot;Ab23!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsSatisfiedBy(&quot;Ab123&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsSatisfiedBy(&quot;Ab22!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsSatisfiedBy(&quot;b123!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsSatisfiedBy(&quot;Abb2b2!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsSatisfiedBy(&quot;bB3&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsSatisfiedBy(&quot;3!!h&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexityExtraSpecificationTest.IsSatisfiedBy_NullFields" executed="True" result="Success" success="True" time="0.001" asserts="8" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="PasswordComplexitySpecificationTest" executed="True" result="Success" success="True" time="0.023" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Success" success="True" time="0.010" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsNotSatisfiedBy(&quot;&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsNotSatisfiedBy(null)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsNotSatisfiedBy(&quot;a1&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsNotSatisfiedBy(&quot;12test&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsNotSatisfiedBy(&quot;Abb23!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsNotSatisfiedBy(&quot;Ab123!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsNotSatisfiedBy(&quot;Abb23&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsNotSatisfiedBy(&quot;Abb2!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsNotSatisfiedBy(&quot;bA7e9!n&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Success" success="True" time="0.009" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsSatisfiedBy(&quot;Abb123!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsSatisfiedBy(&quot;bA7e91!n&quot;)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsSatisfiedBy(&quot;!23Qwert4&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsSatisfiedBy(&quot;Abc123!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsSatisfiedBy(&quot;Abb234!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsSatisfiedBy(&quot;$Abb123^&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsSatisfiedBy(&quot;22Abb2!!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordComplexitySpecificationTest.IsSatisfiedBy(&quot;b+bY123!&quot;)" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="PasswordEqualSpecificationTest" executed="True" result="Failure" success="False" time="0.023" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Failure" success="False" time="0.013" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordEqualSpecificationTest.IsNotSatisfiedBy(null)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.strEncrypt(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Encrypt(String text)
+at ModelUT.DecisionSupport.Authentication.PasswordEqualSpecificationTest.IsNotSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\PasswordEqualSpecificationTest.cs:line 26
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordEqualSpecificationTest.IsNotSatisfiedBy(&quot;FindU1&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.strEncrypt(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Encrypt(String text)
+at ModelUT.DecisionSupport.Authentication.PasswordEqualSpecificationTest.IsNotSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\PasswordEqualSpecificationTest.cs:line 26
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordEqualSpecificationTest.IsNotSatisfiedBy(&quot;FindU2&quot;)" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.strEncrypt(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Encrypt(String text)
+at ModelUT.DecisionSupport.Authentication.PasswordEqualSpecificationTest.IsNotSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\PasswordEqualSpecificationTest.cs:line 26
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Failure" success="False" time="0.008" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordEqualSpecificationTest.IsSatisfiedBy(&quot;FindU1&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.strEncrypt(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Encrypt(String text)
+at ModelUT.DecisionSupport.Authentication.PasswordEqualSpecificationTest.IsSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\PasswordEqualSpecificationTest.cs:line 18
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordEqualSpecificationTest.IsSatisfiedBy(&quot;FindU2&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.strEncrypt(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Encrypt(String text)
+at ModelUT.DecisionSupport.Authentication.PasswordEqualSpecificationTest.IsSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\PasswordEqualSpecificationTest.cs:line 18
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="PasswordExpiredSpecificationTest" executed="True" result="Failure" success="False" time="0.021" asserts="0">
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Failure" success="False" time="0.008" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordExpiredSpecificationTest.IsNotSatisfiedBy(&quot;FindU1&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.PasswordExpiredSpecificationTest.IsNotSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\PasswordExpiredSpecificationTest.cs:line 24
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordExpiredSpecificationTest.IsNotSatisfiedBy(&quot;FindU2&quot;)" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.PasswordExpiredSpecificationTest.IsNotSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\PasswordExpiredSpecificationTest.cs:line 24
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Failure" success="False" time="0.009" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordExpiredSpecificationTest.IsSatisfiedBy(null)" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordExpiredSpecificationTest.IsSatisfiedBy(&quot;FindU1pe&quot;)" executed="True" result="Error" success="False" time="0.003" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.PasswordExpiredSpecificationTest.IsSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\PasswordExpiredSpecificationTest.cs:line 17
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordExpiredSpecificationTest.IsSatisfiedBy(&quot;FindU2pe&quot;)" executed="True" result="Error" success="False" time="0.002" asserts="0">
+                                <failure>
+                                  <message><![CDATA[System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.getRMD160(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Rmd160(String text)
+at ModelUT.Services.Stubs.UserRepository..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\Stubs\UserRepository.cs:line 14
+at ModelUT.DecisionSupport.Authentication.PasswordExpiredSpecificationTest.IsSatisfiedBy(String username) in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\PasswordExpiredSpecificationTest.cs:line 17
+]]></stack-trace>
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="PasswordListMatchSpecificationTest" executed="True" result="Error" success="False" time="0.014" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                          <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.strEncrypt(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Encrypt(String text)
+at ModelUT.DecisionSupport.Authentication.PasswordListMatchSpecificationTest..ctor() in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\PasswordListMatchSpecificationTest.cs:line 12
+]]></stack-trace>
+                        </failure>
+                        <results>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordListMatchSpecificationTest.IsNotSatisfiedBy(&quot;pass&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                                <failure>
+                                  <message><![CDATA[TestFixtureSetUp failed in PasswordListMatchSpecificationTest]]></message>
+                                  <stack-trace />
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordListMatchSpecificationTest.IsNotSatisfiedBy(&quot;pass4&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                                <failure>
+                                  <message><![CDATA[TestFixtureSetUp failed in PasswordListMatchSpecificationTest]]></message>
+                                  <stack-trace />
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsNotSatisfiedBy_EmptyList" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordListMatchSpecificationTest.IsNotSatisfiedBy_EmptyList(&quot;pass1&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                                <failure>
+                                  <message><![CDATA[TestFixtureSetUp failed in PasswordListMatchSpecificationTest]]></message>
+                                  <stack-trace />
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordListMatchSpecificationTest.IsNotSatisfiedBy_EmptyList(&quot;pass2&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                                <failure>
+                                  <message><![CDATA[TestFixtureSetUp failed in PasswordListMatchSpecificationTest]]></message>
+                                  <stack-trace />
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                          <test-suite type="ParameterizedTest" name="IsSatisfiedBy" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <results>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordListMatchSpecificationTest.IsSatisfiedBy(&quot;pass1&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                                <failure>
+                                  <message><![CDATA[TestFixtureSetUp failed in PasswordListMatchSpecificationTest]]></message>
+                                  <stack-trace />
+                                </failure>
+                              </test-case>
+                              <test-case name="ModelUT.DecisionSupport.Authentication.PasswordListMatchSpecificationTest.IsSatisfiedBy(&quot;pass2&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                                <failure>
+                                  <message><![CDATA[TestFixtureSetUp failed in PasswordListMatchSpecificationTest]]></message>
+                                  <stack-trace />
+                                </failure>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="SecurityAnswerEqualSpecificationTest" executed="True" result="Error" success="False" time="0.006" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                          <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.strEncrypt(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Encrypt(String text)
+at ModelUT.DecisionSupport.Authentication.SecurityAnswerEqualSpecificationTest..ctor() in X:\__dev\__source\authentication-service\ModelUT\DecisionSupport\Authentication\SecurityAnswerEqualSpecificationTest.cs:line 12
+]]></stack-trace>
+                        </failure>
+                        <results>
+                          <test-case name="ModelUT.DecisionSupport.Authentication.SecurityAnswerEqualSpecificationTest.IsNotSatisfiedBy" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in SecurityAnswerEqualSpecificationTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.DecisionSupport.Authentication.SecurityAnswerEqualSpecificationTest.IsSatisfiedBy" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in SecurityAnswerEqualSpecificationTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="Services" executed="True" result="Failure" success="False" time="1.096" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="AuthenticationServiceTest" executed="True" result="Error" success="False" time="0.186" asserts="0">
+                    <failure>
+                      <message><![CDATA[SetUp : System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                      <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.strEncrypt(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Encrypt(String text)
+at ModelUT.Services.AuthenticationServiceTest..ctor() in X:\__dev\__source\authentication-service\ModelUT\Services\AuthenticationServiceTest.cs:line 560
+]]></stack-trace>
+                    </failure>
+                    <results>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ActiveDirectoryBadPassword" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ActiveDirectoryInvalidUser" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ActiveDirectoryLogInWithMaxFailedLoginsExceeded" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ActiveDirectoryNotALiteUser" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ActiveDirectorySuccessfulConnect" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.AdminGeneratePasswordResetToken_Logging" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.AdminGeneratePasswordResetToken_SelfCaseSuccess" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.AdminGeneratePasswordResetToken_SelfCaseTooFrequent" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.AdminGeneratePasswordResetToken_Success" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.AdminGeneratePasswordResetTokenNotAllowedForActiveDirectory" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.FindEnvironmentByDomain" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.FindEnvironmentByDomainNotFound" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.FindUserSecurityQuestion" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.FindUserSecurityQuestionDisallowedForActiveDirectory" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-suite type="ParameterizedTest" name="FindUserSecurityQuestionWithInvalidDomain" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.FindUserSecurityQuestionWithInvalidDomain(null)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.FindUserSecurityQuestionWithInvalidDomain(&quot;&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.FindUserSecurityQuestionWithInvalidDomain(&quot;DoNotFind123&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.FindUserSecurityQuestionWithInvalidUser" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.FindUserSecurityQuestionWithInvalidUsername" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.GeneratePasswordResetToken" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.GeneratePasswordResetToken_Logging" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.GeneratePasswordResetTokenNotAllowedForAD" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-suite type="ParameterizedTest" name="GetPasswordRequirements" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.GetPasswordRequirements(&quot;FindDomain&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.GetSchemaDomainByToken" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.GetSchemaDomainByUsername" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.GetSecurityQuestions" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-suite type="ParameterizedTest" name="GetSettings" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.GetSettings(&quot;FindDomain&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.IsEnabledClient" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.IsEnabledClientException" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-suite type="ParameterizedTest" name="Login" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.Login(&quot;FindU1&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.Login(&quot;FindU2&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.Login_NoPasswordHistory" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-suite type="ParameterizedTest" name="LogInWithAccountDisabled_KeepLock" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LogInWithAccountDisabled_KeepLock(&quot;FindU1ad&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="LogInWithAccountDisabled_Unlock" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LogInWithAccountDisabled_Unlock(&quot;FindU1ad&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="LogInWithAccountTimedout" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LogInWithAccountTimedout(&quot;FindU1at&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LogInWithAccountTimedout(&quot;FindU2at&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="LoginWithEmptyPassword" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LoginWithEmptyPassword(null)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LoginWithEmptyPassword(&quot;&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="LoginWithInvalidDomain" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LoginWithInvalidDomain(null)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LoginWithInvalidDomain(&quot;&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LoginWithInvalidDomain(&quot;DoNotFind123&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="LoginWithInvalidIP" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LoginWithInvalidIP(&quot;FindIP4&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LoginWithInvalidIP(&quot;FindIP5&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="LogInWithInvalidPassword" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LogInWithInvalidPassword(&quot;FindU1&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LogInWithInvalidPassword(&quot;FindU2&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="LoginWithInvalidUsername" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LoginWithInvalidUsername(null)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LoginWithInvalidUsername(&quot;&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LoginWithInvalidUsername(&quot;FindEL1@test.com_donotfind&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.LoginWithInvalidUsername" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.LoginWithInvalidUsernameTestLoginMessage" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-suite type="ParameterizedTest" name="LoginWithLoginDisabled" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LoginWithLoginDisabled(&quot;FindU1_loginDisabled&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="LogInWithMaxFailedLoginsExceeded" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LogInWithMaxFailedLoginsExceeded(&quot;FindU1fish&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="LogInWithPasswordExpired" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LogInWithPasswordExpired(&quot;FindU1pe&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.LogInWithPasswordExpired(&quot;FindU2pe&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="ResetPassword" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPassword(&quot;+a1a1LALA1!&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPassword(&quot;NotShort12!!&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPassword_ExistingPasswordIsNull" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPassword_FrequencyValidation" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPassword_LastPasswordNull" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPassword_LiteUsernameLogging" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPassword_LiteUsernamePasswordHistory" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPassword_NoFrequencyValidation" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-suite type="ParameterizedTest" name="ResetPasswordHistoryMatch" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordHistoryMatch(&quot;+a1a1LALALA123+&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="ResetPasswordHistoryMatchTooOld" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordHistoryMatchTooOld(&quot;+a1a1LALALA12345+&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="ResetPasswordInvalidRequirements" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordInvalidRequirements(&quot;+&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordInvalidRequirements(&quot;a&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordInvalidRequirements(&quot;1&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordInvalidRequirements(&quot;a1&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordInvalidRequirements(&quot;short12&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="ResetPasswordInvalidRequirementsBadPassword" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordInvalidRequirementsBadPassword(&quot;&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordInvalidRequirementsBadPassword(null)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordNotAllowedForActiveDirectory" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-suite type="ParameterizedTest" name="ResetPasswordWithInvalidDomain" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordWithInvalidDomain(null)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordWithInvalidDomain(&quot;&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordWithInvalidDomain(&quot;DoNotFind123&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordWithInvalidUsername" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-suite type="ParameterizedTest" name="ResetPasswordWithInvalidUsername" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordWithInvalidUsername(null)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ResetPasswordWithInvalidUsername(&quot;&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.SetSecurityAnswer" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.SetSecurityAnswerAnswerTooShort" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.SetSecurityAnswerDisallowedForActiveDirectory" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.SetSecurityAnswerDuplicateAnswers" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.SetSecurityAnswerDuplicateQuestions" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.SetSecurityAnswerNullAnswers" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.SetSecurityAnswerWrongAnswerCount" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-suite type="ParameterizedTest" name="ValidatePasswordRules" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidatePasswordRules(&quot;+a1a1LALA1!&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidatePasswordRules(&quot;NotShort12!!&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="ValidatePasswordRulesInvalidRequirements" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidatePasswordRulesInvalidRequirements(&quot;+&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidatePasswordRulesInvalidRequirements(&quot;a&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidatePasswordRulesInvalidRequirements(&quot;1&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidatePasswordRulesInvalidRequirements(&quot;a1&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidatePasswordRulesInvalidRequirements(&quot;short12&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidatePasswordRulesInvalidRequirements(&quot;NotShort12ButHasEmail&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidatePasswordRulesInvalidRequirements(&quot;NotShort12ButHasUser1&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidatePasswordRulesInvalidRequirements(&quot;12HasEmailUser1&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateToken" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-suite type="ParameterizedTest" name="ValidateUserIdDomainIPWithAccountDisabled" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserIdDomainIPWithAccountDisabled(&quot;FindU1ad&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="ValidateUserIdDomainIPWithAccountTimedout" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserIdDomainIPWithAccountTimedout(&quot;FindU1at&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserIdDomainIPWithAccountTimedout(&quot;FindU2at&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="ValidateUserIdDomainIPWithInvalidDomain" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserIdDomainIPWithInvalidDomain(null)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserIdDomainIPWithInvalidDomain(&quot;&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserIdDomainIPWithInvalidDomain(&quot;DoNotFind123&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="ValidateUserIdDomainIPWithInvalidIP" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserIdDomainIPWithInvalidIP(&quot;FindIP4&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserIdDomainIPWithInvalidIP(&quot;FindIP5&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserIdDomainIPWithInvalidIP(&quot;FindEL1@test.com_donotfind&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="ParameterizedTest" name="ValidateUserIdDomainIPWithInvalidUsername" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <results>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserIdDomainIPWithInvalidUsername(null)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserIdDomainIPWithInvalidUsername(&quot;&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserIdDomainIPWithInvalidUsername(&quot;donotfind&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                          <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserIdDomainIPWithInvalidUsername(&quot;donotfind@email.com&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                            <failure>
+                              <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                              <stack-trace />
+                            </failure>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserSecurityAnswer_LiteUsernameLogging" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserSecurityAnswer_Match" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserSecurityAnswer_NoMatch" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserSecurityAnswer_WrongQuestion" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="ModelUT.Services.AuthenticationServiceTest.ValidateUserSecurityAnswerNotAllowedForAD" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in AuthenticationServiceTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="TestFixture" name="LDAPAuthenticationServiceTest" executed="True" result="Failure" success="False" time="0.890" asserts="0">
+                    <results>
+                      <test-case name="ModelUT.Services.LDAPAuthenticationServiceTest.ActiveDirectoryLockOutUser" executed="False" result="Ignored">
+                        <reason>
+                          <message><![CDATA[]]></message>
+                        </reason>
+                      </test-case>
+                      <test-case name="ModelUT.Services.LDAPAuthenticationServiceTest.ActiveDirectoryLoginBadDomain" executed="True" result="Success" success="True" time="0.561" asserts="1" />
+                      <test-case name="ModelUT.Services.LDAPAuthenticationServiceTest.ActiveDirectoryLoginBadPassword" executed="True" result="Success" success="True" time="0.036" asserts="1" />
+                      <test-case name="ModelUT.Services.LDAPAuthenticationServiceTest.ActiveDirectoryLoginBadUserID" executed="True" result="Success" success="True" time="0.243" asserts="1" />
+                      <test-case name="ModelUT.Services.LDAPAuthenticationServiceTest.ActiveDirectoryLoginSuccess" executed="True" result="Failure" success="False" time="0.041" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                          <stack-trace><![CDATA[at ModelUT.Services.LDAPAuthenticationServiceTest.ActiveDirectoryLoginSuccess() in X:\__dev\__source\authentication-service\ModelUT\Services\LDAPAuthenticationServiceTest.cs:line 42
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="Assembly" name="X:\__dev\__source\authentication-service\PersistenceUT\bin\PersistenceUT.dll" executed="True" result="Failure" success="False" time="0.586" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="PersistenceUT" executed="True" result="Failure" success="False" time="0.579" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="EmailRepositoryTest" executed="True" result="Error" success="False" time="0.502" asserts="0">
+                <failure>
+                  <message><![CDATA[SetUp : System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.strDecrypt(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Decrypt(String text)
+at PersistenceUT.Mapper.get_ConnectionString() in X:\__dev\__source\authentication-service\__submodules\svcbus-common-persistence\PersistenceUT\Mapper.cs:line 17
+at PersistenceUT.EmailRepositoryTest..ctor() in X:\__dev\__source\authentication-service\PersistenceUT\EmailRepositoryTest.cs:line 12
+]]></stack-trace>
+                </failure>
+                <results>
+                  <test-case name="PersistenceUT.EmailRepositoryTest.Delete" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in EmailRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.EmailRepositoryTest.FindById" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in EmailRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.EmailRepositoryTest.FindByRecipient" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in EmailRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.EmailRepositoryTest.Save" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in EmailRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="SecurityAnswerRepositoryTest" executed="True" result="Error" success="False" time="0.012" asserts="0">
+                <failure>
+                  <message><![CDATA[SetUp : System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.strDecrypt(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Decrypt(String text)
+at PersistenceUT.Mapper.get_ConnectionString() in X:\__dev\__source\authentication-service\__submodules\svcbus-common-persistence\PersistenceUT\Mapper.cs:line 17
+at PersistenceUT.SecurityAnswerRepositoryTest..ctor() in X:\__dev\__source\authentication-service\PersistenceUT\SecurityAnswerRepositoryTest.cs:line 13
+]]></stack-trace>
+                </failure>
+                <results>
+                  <test-case name="PersistenceUT.SecurityAnswerRepositoryTest.Delete" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in SecurityAnswerRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.SecurityAnswerRepositoryTest.Find" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in SecurityAnswerRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.SecurityAnswerRepositoryTest.FindUserSecurityQuestion" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in SecurityAnswerRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.SecurityAnswerRepositoryTest.SaveAdd" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in SecurityAnswerRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.SecurityAnswerRepositoryTest.SaveUpdate" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in SecurityAnswerRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="SettingRepositoryTest" executed="True" result="Error" success="False" time="0.006" asserts="0">
+                <failure>
+                  <message><![CDATA[SetUp : System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.strDecrypt(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Decrypt(String text)
+at PersistenceUT.Mapper.get_ConnectionString() in X:\__dev\__source\authentication-service\__submodules\svcbus-common-persistence\PersistenceUT\Mapper.cs:line 17
+at PersistenceUT.SettingRepositoryTest..ctor() in X:\__dev\__source\authentication-service\PersistenceUT\SettingRepositoryTest.cs:line 9
+]]></stack-trace>
+                </failure>
+                <results>
+                  <test-case name="PersistenceUT.SettingRepositoryTest.FindGlobalSettings" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in SettingRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.SettingRepositoryTest.FindSecurityQuestions" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in SettingRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="UserRepositoryTest" executed="True" result="Error" success="False" time="0.051" asserts="0">
+                <failure>
+                  <message><![CDATA[SetUp : System.DllNotFoundException : Unable to load DLL 'LoginFuncs_r32_v1-0-2.dll': The specified module could not be found. (Exception from HRESULT: 0x8007007E)]]></message>
+                  <stack-trace><![CDATA[at Sovos.Crypt.Model.Services.LoginUtility.strDecrypt(StringBuilder text)
+at Sovos.Crypt.Model.Services.LoginUtility.Decrypt(String text)
+at PersistenceUT.Mapper.get_ConnectionString() in X:\__dev\__source\authentication-service\__submodules\svcbus-common-persistence\PersistenceUT\Mapper.cs:line 17
+at PersistenceUT.UserRepositoryTest..ctor() in X:\__dev\__source\authentication-service\PersistenceUT\UserRepositoryTest.cs:line 18
+]]></stack-trace>
+                </failure>
+                <results>
+                  <test-case name="PersistenceUT.UserRepositoryTest.AddPasswordHistory" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.DeletePasswordHistory" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.DisableLogin" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.FindByLiteUsername" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.FindByLiteUsernameLite" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.FindByLiteUsernameLiteNotFound" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.FindByLiteUsernameNotFound" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.FindByUsername" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.FindByUsernameNotFound" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.FindLastUserPassword" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.FindLastUserPassword_UnknownUser" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.FindPasswordHistory" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.FindUserLastPasswordResetDate" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.FindUserLastPasswordResetDate_UserNotFound" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.FindWrongLoginCount" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.FindWrongSecurityAnswerCount" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.GetSchemaDomainByToken" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-suite type="ParameterizedTest" name="GetSchemaDomainByToken_InvalidTokenOrUser" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <results>
+                      <test-case name="PersistenceUT.UserRepositoryTest.GetSchemaDomainByToken_InvalidTokenOrUser(null)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="PersistenceUT.UserRepositoryTest.GetSchemaDomainByToken_InvalidTokenOrUser(&quot;&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="PersistenceUT.UserRepositoryTest.GetSchemaDomainByToken_InvalidTokenOrUser(&quot;wrong-token&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-case name="PersistenceUT.UserRepositoryTest.GetSchemaDomainByUsername" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-suite type="ParameterizedTest" name="GetSchemaDomainByUsername_noExistentUsername" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <results>
+                      <test-case name="PersistenceUT.UserRepositoryTest.GetSchemaDomainByUsername_noExistentUsername(null)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="PersistenceUT.UserRepositoryTest.GetSchemaDomainByUsername_noExistentUsername(&quot;&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="PersistenceUT.UserRepositoryTest.GetSchemaDomainByUsername_noExistentUsername(&quot;NoExitentUser&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-case name="PersistenceUT.UserRepositoryTest.IsEnabledClient" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.IsLoginEnabled" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.ResetPassword" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-case name="PersistenceUT.UserRepositoryTest.SaveAndValidateToken" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <failure>
+                      <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                      <stack-trace />
+                    </failure>
+                  </test-case>
+                  <test-suite type="ParameterizedTest" name="ValidateToken_InvalidTokenOrUser" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                    <results>
+                      <test-case name="PersistenceUT.UserRepositoryTest.ValidateToken_InvalidTokenOrUser(null)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="PersistenceUT.UserRepositoryTest.ValidateToken_InvalidTokenOrUser(&quot;&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                      <test-case name="PersistenceUT.UserRepositoryTest.ValidateToken_InvalidTokenOrUser(&quot;wrong-token&quot;)" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+                        <failure>
+                          <message><![CDATA[TestFixtureSetUp failed in UserRepositoryTest]]></message>
+                          <stack-trace />
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
