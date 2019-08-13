@@ -1,3 +1,8 @@
+properties([
+  pipelineTriggers([
+    [$class: 'GitHubPushTrigger']
+  ])
+])
 node ('master'){
     stage ('checkout'){
         checkout scm
@@ -35,5 +40,4 @@ node {
     bat 'cd build && test.cmd'
   }
 }
-
 
